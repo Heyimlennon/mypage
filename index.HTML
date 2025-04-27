@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lennon's 3D Models</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4A90E2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .models {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .model {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .model:hover {
+      transform: scale(1.03);
+    }
+    .model img {
+      width: 100%;
+      height: auto;
+    }
+    .model h2 {
+      font-size: 1.5rem;
+      margin: 1rem 0 0.5rem 0;
+    }
+    .model p {
+      padding: 0 1rem;
+      font-size: 1rem;
+      color: #666;
+    }
+    .buy-button {
+      background: #4A90E2;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      margin: 1rem;
+      display: inline-block;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .buy-button:hover {
+      background: #357ABD;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ddd;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Lennon's 3D Models</h1>
+  <p>High quality models available now!</p>
+</header>
+
+<section class="models" id="models-container">
+  <!-- Models will be added here automatically -->
+</section>
+
+<footer>
+  © 2025 LennonKey | Powered by GitHub Pages
+</footer>
+
+<script>
+  // Your models list here:
+  const models = [
+    {
+      name: "Cool Robot",
+      description: "A high-detailed robot model for games and projects.",
+      image: "robot-model.jpg",
+      link: "https://lennonkey.gumroad.com/l/rhxbzz"
+    },
+    {
+      name: "Fantasy Sword",
+      description: "A medieval fantasy sword, ready for battle scenes.",
+      image: "fantasy-sword.jpg",
+      link: "https://your-second-gumroad-link-here"
+    },
+    // Add more models easily like this:
+    /*
+    {
+      name: "Model Name",
+      description: "Short description",
+      image: "your-image.jpg",
+      link: "your-gumroad-link"
+    }
+    */
+  ];
+
+  const container = document.getElementById('models-container');
+
+  models.forEach(model => {
+    const div = document.createElement('div');
+    div.className = 'model';
+    div.innerHTML = `
+      <img src="${model.image}" alt="${model.name}">
+      <h2>${model.name}</h2>
+      <p>${model.description}</p>
+      <a class="buy-button" href="${model.link}" target="_blank">Buy Now</a>
+    `;
+    container.appendChild(div);
+  });
+</script>
+
+</body>
+</html>
