@@ -1,127 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lennon's 3D Models</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creaking SMP | Minecraft Server</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #0e0e0e;
+      color: #fff;
     }
     header {
-      background: #4A90E2;
-      color: white;
+      background-color: #111;
       padding: 1rem;
       text-align: center;
     }
-    .models {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00ffcc;
     }
-    .model {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.2s;
+    nav {
+      margin-top: 1rem;
     }
-    .model:hover {
-      transform: scale(1.03);
-    }
-    .model img {
-      width: 100%;
-      height: auto;
-    }
-    .model h2 {
-      font-size: 1.5rem;
-      margin: 1rem 0 0.5rem 0;
-    }
-    .model p {
-      padding: 0 1rem;
-      font-size: 1rem;
-      color: #666;
-    }
-    .buy-button {
-      background: #4A90E2;
-      color: white;
-      padding: 0.8rem 1.2rem;
-      margin: 1rem;
-      display: inline-block;
-      border-radius: 4px;
+    nav a {
+      color: #00ffcc;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
     }
-    .buy-button:hover {
-      background: #357ABD;
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #ffcc00;
+    }
+    .info-box {
+      background: #1a1a1a;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      margin: 1rem 0;
+      border-left: 4px solid #00ffcc;
+    }
+    .ip {
+      font-size: 1.2rem;
+      color: #00ffcc;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: #ffffff;
+      background: #222;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .socials a:hover {
+      background: #00ffcc;
+      color: #000;
     }
     footer {
       text-align: center;
+      background: #111;
       padding: 1rem;
-      background: #ddd;
-      margin-top: 2rem;
       font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Lennon's 3D Models</h1>
-  <p>High quality models available now!</p>
-</header>
+  <header>
+    <h1>Creaking SMP</h1>
+    <div>🌿 Friendly • Vanilla • Longterm Survival</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#join">How to Join</a>
+      <a href="#rules">Rules</a>
+      <a href="#socials">Socials</a>
+    </nav>
+  </header>
 
-<section class="models" id="models-container">
-  <!-- Models will be added here automatically -->
-</section>
+  <section class="section" id="about">
+    <h2>About the Server</h2>
+    <p>
+      Welcome to <strong>Creaking SMP</strong> — a crossplay Minecraft survival multiplayer server that supports both Java and Bedrock! Our goal is to create a chill, long-lasting experience with friendly players, vanilla gameplay, and a close-knit community.
+    </p>
+    <p>
+      Whether you're a builder, redstoner, explorer, or casual player, there's a place for you here. Our server is lightly moderated, grief-protected, and open 24/7 for all time zones.
+    </p>
+  </section>
 
-<footer>
-  © 2025 LennonKey | Powered by GitHub Pages
-</footer>
+  <section class="section" id="join">
+    <h2>How to Join</h2>
+    <div class="info-box">
+      <strong>Java Edition:</strong><br />
+      <span class="ip">IP: mc.creaking.fun</span><br />
+      Version: 1.20+
+    </div>
+    <div class="info-box">
+      <strong>Bedrock Edition:</strong><br />
+      Add the username: <span class="ip">CreakingBedrock</span><br />
+      Version: 1.20+
+    </div>
+    <p>Make sure to join the Discord after joining the server for full access and community events!</p>
+  </section>
 
-<script>
-  // Your models list here:
-  const models = [
-    {
-      name: "Leathal Company Model",
-      description: "A semi-detailed leathel company character.",
-      link: "https://lennonkey.gumroad.com/l/rhxbzz"
-    },
-    {
-      name: "",
-      description: ".",
-      link: ""
-    },
-    // Add more models easily like this:
-    /*
-    {
-      name: "Model Name",
-      description: "Short description",
-      link: "your-gumroad-link"
-    }
-    */
-  ];
+  <section class="section" id="rules">
+    <h2>Community Rules</h2>
+    <ul>
+      <li>🌟 Be respectful to others</li>
+      <li>🚫 No griefing or stealing</li>
+      <li>🛡️ No hacks or cheats (x-ray, fly, etc.)</li>
+      <li>👷 Build responsibly and don't lag the server</li>
+      <li>📢 Keep chat friendly and clean</li>
+    </ul>
+    <p>Failure to follow rules may result in a warning or ban.</p>
+  </section>
 
-  const container = document.getElementById('models-container');
+  <section class="section" id="socials">
+    <h2>Connect with Us</h2>
+    <div class="socials">
+      <a href="https://discord.gg/CreakingSMP" target="_blank">💬 Discord</a>
+      <a href="https://youtube.com/@Creaking-SMP" target="_blank">▶️ YouTube</a>
+      <a href="https://tiktok.com/@mc.creaking.fun" target="_blank">🎵 TikTok</a>
+    </div>
+  </section>
 
-  models.forEach(model => {
-    const div = document.createElement('div');
-    div.className = 'model';
-    div.innerHTML = `
-      <img src="${model.image}" alt="${model.name}">
-      <h2>${model.name}</h2>
-      <p>${model.description}</p>
-      <a class="buy-button" href="${model.link}" target="_blank">Buy Now</a>
-    `;
-    container.appendChild(div);
-  });
-</script>
+  <footer>
+    &copy; 2025 Creaking SMP • Made with ❤️ for Minecraft fans
+  </footer>
 
 </body>
 </html>
